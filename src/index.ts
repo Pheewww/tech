@@ -1,10 +1,12 @@
 //import { PrismaClient } from "@prisma/client";
+import getTodosAndUserDetails from "./func";
 import getTodo from "./func";
 
 //const prisma = new PrismaClient();
 
 //createTodo(1, "go to gym", "go to gym and do 10 pushups");
-getTodo(1);
+getTodosAndUserDetails(1);
+
 
 
 
