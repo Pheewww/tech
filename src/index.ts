@@ -24,18 +24,6 @@ const prisma = new PrismaClient();
 //}
 
 
-async function getUser(username: string) {
-  const user = await prisma.user.findFirst({
-    where: {
-        username: username
-    }
-  })
-  console.log(user);
-}
-
-getUser("admin1");
-
-
 // async function updateUser(username: string, {
 //     firsName,
 //     lastName
@@ -54,6 +42,19 @@ getUser("admin1");
   
   
 // }
+
+
+async function getUser(username: string) {
+  const user = await prisma.user.findFirst({
+    where: {
+        username: username
+    }
+  })
+  console.log(user);
+}
+
+getUser("admin1");
+
 
 // updateUser("admin1", {
 //   firsName: "NEW",
