@@ -24,5 +24,4 @@ npm-debug.log*
 **/build
 
 # Ignore Docker files
-**/Dockerfile
 **/.dockerignore
