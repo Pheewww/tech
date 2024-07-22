@@ -1,6 +1,8 @@
 FROM node:20
 
 # Layers in docker - help to cache images/data for faster build
+# network - so that 2 container can talk to each other
+# volumes - so that data persists when container goes down/killed
 COPY package* .
 COPY ./prisma .
 
