@@ -1,0 +1,27 @@
+# Root .gitignore
+
+# Ignore node_modules in all subfolders
+**/node_modules
+
+# Ignore logs
+logs
+*.log
+npm-debug.log*
+
+# Ignore dotenv files
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# Ignore misc files
+.DS_Store
+*.pem
+
+# Ignore build outputs
+**/dist
+**/build
+
+# Ignore Docker files
+**/.dockerignore
