@@ -21,4 +21,7 @@ delay1sec(function () {
     // callback    
     console.log("nothing");
 });
-const greet = (name) => `Hello, ${name}!`;
+function isLegal(user1) {
+    console.log("user ki age", user1.age);
+    return (user1.age > 18);
+}

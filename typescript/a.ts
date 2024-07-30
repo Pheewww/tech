@@ -28,7 +28,53 @@ delay1sec(function(){
     console.log("nothing");
 })
 
+interface User{
+    fname: string,
+    lname: string,
+    age: number,
+}
+
  
+function isLegal(user1: User){
+    console.log("user ki age", user1.age)
+    return (user1.age>18);
+}
+
+// intersections in types
+type person = {
+    name: string,
+    age: number,
+    dob: Date,
+}
+
+type person_died = {
+    name: string,
+    dead_date: Date,
+}
+
+type Human  = person & person_died;
+
+const yo: Human = {
+    name: "umang",
+    age: 20,
+    dob: new Date(),
+    dead_date: new Date(),
+}
+
+
+// arrays in ts
+
+const array:number[] = [1, 2]
+
+// Generics
+function getFirst<T>(arg: T[]): T{
+    return arg[0];
+}
+
+const output = getFirst([1, 2 , 3]); //number
+const output1 = getFirst<string>(["umm", "yo"]);
+output1.toUpperCase();
+
  
 
 
