@@ -1,0 +1,48 @@
+Objective:
+
+Design a simplified version of a Library Management System (LMS). The focus should be on creating a low-level design with appropriate classes, methods, and interactions that would be implemented in a real-world application.
+Requirements:
+
+    User Roles:
+        Librarian: Manages the catalog, adds/removes books, checks in returned books.
+        Member: Can search for books, borrow and return books, and view their borrowing history.
+
+    Core Functionalities:
+        Book Management:
+            Add a new book to the system.
+            Remove a book from the system.
+            Search for a book by title, author, or ISBN.
+        Borrowing System:
+            A member can borrow a book if it's available.
+            A member can return a book.
+            Track due dates for borrowed books.
+        User Management:
+            Register a new member.
+            Deactivate a member.
+            Track the borrowing history of members.
+
+    Constraints:
+        A member can borrow up to 5 books at a time.
+        Books are due back within 14 days of borrowing.
+
+Tasks:
+
+    Class Diagram:
+        Design a class diagram with at least the following classes: Book, Member, Librarian, Catalog, Library, BorrowingRecord.
+        Show relationships between the classes (e.g., inheritance, association).
+
+    Class Design:
+        Define the attributes and methods for each class.
+        Ensure that the methods are clearly defined with parameters and return types.
+        Consider edge cases and error handling in your methods.
+
+    Sequence Diagram:
+        Create sequence diagrams for the following scenarios:
+            A member searches for a book and borrows it.
+            A member returns a borrowed book.
+            A librarian adds a new book to the catalog.
+
+    Design Justification:
+        Provide a brief write-up (1-2 pages) explaining the rationale behind your design decisions.
+        Discuss any design patterns you’ve used and why they were chosen.
+        Highlight how your design handles scalability, maintainability, and extensibility.
